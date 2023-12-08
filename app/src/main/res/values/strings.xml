@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CoinTrackerAndroid</string>
+    <string name="action_coin_list">Каталог</string>
+    <string name="action_exit">Выйти</string>
+    <string name="exchange">Найти обмен</string>
+    <string name="dialogue">Диалоги</string>
+    <string name="albums">Альбомы</string>
+    <string name="add_coin">Добавить монету</string>
+    <string name="remove_coin">Убрать монету</string>
+    <string name="delete_album">Удалить альбом</string>
+    <string name="comeback">Вернуться</string>
+</resources>

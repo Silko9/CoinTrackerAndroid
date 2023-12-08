@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/detailCoinImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/detailNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Название:"
+            android:paddingHorizontal="16dp" />
+
+        <TextView
+            android:id="@+id/detailDenominationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Номинал:"
+            android:paddingHorizontal="16dp" />
+
+        <TextView
+            android:id="@+id/detailCurrencyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Валюта:"
+            android:paddingHorizontal="16dp" />
+
+        <TextView
+            android:id="@+id/detailCountryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Страна:"
+            android:paddingHorizontal="16dp" />
+
+        <TextView
+            android:id="@+id/detailMintTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Монетный двор:"
+            android:paddingHorizontal="16dp" />
+
+        <TextView
+            android:id="@+id/detailYearTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Год выпуска:"
+            android:paddingHorizontal="16dp" />
+
+        <TextView
+            android:id="@+id/detailDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:text="Описание:"
+            android:paddingHorizontal="16dp" />
+
+        <TextView
+            android:id="@+id/detailStockAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="В наличие:"
+            android:paddingHorizontal="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp" >
+
+            <Button
+                android:id="@+id/decreaseButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:backgroundTint="@android:color/holo_red_dark"/>
+
+            <Button
+                android:id="@+id/increaseButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:backgroundTint="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detailExchangeAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="На обмен:"
+            android:paddingHorizontal="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp" >
+
+            <Button
+                android:id="@+id/decreaseButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:backgroundTint="@android:color/holo_red_dark"/>
+
+            <Button
+                android:id="@+id/increaseButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:backgroundTint="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detailNeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Нуждаюсь:"
+            android:paddingHorizontal="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp" >
+
+            <Button
+                android:id="@+id/decreaseButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:backgroundTint="@android:color/holo_red_dark"/>
+
+            <Button
+                android:id="@+id/increaseButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:backgroundTint="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+    <!--android:textColor="@android:color/holo_green_dark"-->
+

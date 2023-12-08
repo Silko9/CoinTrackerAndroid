@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoinTrackerAndroid"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CoinDetailActivity"
+            android:label="Детализация монеты">
+        </activity>
+
+        <activity
+            android:name=".CoinListActivity"
+            android:label="Каталог">
+        </activity>
+
+        <activity
+            android:name=".ExchangeListActivity"
+            android:label="Поиск обменов">
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Вход">
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Регистрация">
+        </activity>
+
+        <activity
+            android:name=".ExchangeActivity"
+            android:label="Обмен">
+        </activity>
+
+        <activity
+            android:name=".DialogueActivity"
+            android:label="">
+        </activity>
+
+        <activity
+            android:name=".DialoguesListActivity"
+            android:label="Диалоги">
+        </activity>
+
+        <activity
+            android:name=".AlbumsListActivity"
+            android:label="Альбомы">
+        </activity>
+
+        <activity
+            android:name=".AlbumActivity"
+            android:label="Альбом">
+        </activity>
+        <activity
+            android:name=".AddCoinToAlbumActivity"
+            android:label="Выберите монету">
+        </activity>
+    </application>
+</manifest>

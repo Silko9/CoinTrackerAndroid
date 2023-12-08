@@ -1,0 +1,40 @@
+<!-- Пример макета для вкладки "У него на обмен" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Написать сообщение" />
+
+    <TextView
+        android:id="@+id/textViewHisExchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="У него на обмен"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <!-- ListView для элементов обмена -->
+    <ListView
+        android:id="@+id/itemExchangeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewHisExchange"
+        android:layout_above="@+id/noExchangeTextView" />
+
+    <!-- TextView "Вам нечего предложить" (по умолчанию скрыт) -->
+    <TextView
+        android:id="@+id/noExchangeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ему нечего вам предложить."
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
